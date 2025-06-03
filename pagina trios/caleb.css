@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+header{
+   background-color:  rgb(159, 185, 233);
+    /*le cambiamos el color al fondo del header*/
+
+}
+
+
+
+
+
+header .logo{
+   margin-right: 10px;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(27, 74, 26);
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 10px;
+
+    /*aqui modificamos el espacio(padding), lo ponemos en negrita,cambiamos color y tamaño del logo*/
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin: 0;
+    padding: 0;
+    /*aqui ponemos todo lo del contenedor del header al centro*/
+}
+
+
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 23px;
+   
+    
+    /*modificamos el tamaño, la direccion, la alineacion del texto del nav*/
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+     
+    /*modificamos el color, quitamos el subrayado a todos los links*/
+}
+
+header a:hover{
+    color: rgb(103, 103, 226);
+}
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        
+flex-direction: row;
+padding-bottom: 0;
+padding-right: 20px;
+    }
+
+
+    #hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(/*aqui utilizo background image para hacer que aparezca un fondo negro en la imagen
+    haciendo que se mejor para leer*/
+0deg,
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/contaminacion2.jpeg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#hero h1{
+    color: white;
+    font-size: 5.5em;
+    text-shadow: 5px 5px 10px rgb(40, 65, 67);
+}
+
+#imagenes{
+    background-color: rgb(2, 67, 95);
+    color: white;
+    text-align: center;
+    padding: 100px;
+        justify-content: center;
+   display: flex;
+   align-items: center;
+}
+
+#imagenes .container{
+padding: 150px 12px;
+}
+
+#imagenes h1{
+    font-size: 6.3em;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+#imagenes h2{
+    margin-top: 0;
+    font-size: 3em;
+    padding: 100px;
+}
+
+#imagenes .imagenchi{
+    width: 1000px;
+    background-position:  center center;
+    background-size: cover;
+    padding: 50px 250px;
+    margin: 15px;
+    border-radius: 15px;
+
+}
+
+    .imagenchi:hover{
+        padding: 60px;
+        scale: 1.05;
+        transition: all ease-in 0.5s;
+    }
+
+.imagenchi:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.5)
+            )
+            ,url("imagenes/plastico1.jpg");
+           
+}
+
+.imagenchi:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.5)
+            )
+            ,url("imagenes/microplasticos.jpg");
+         
+}
+
+.imagenchi:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.5)
+            )
+            ,url("imagenes/plastico2.jpg");
+           
+}
+
+#imagen.imagi{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    font-size: 1.5em;/*cambiamos el tamaño de los botones*/
+    font-weight: bold;/*ponemos los botones en negrita*/
+    padding: 10px 40px;/*hacemos el fondo del boton más grande*/
+    border-radius: 15px;/*redondeamos la esquina de los botones*/
+    border: 1px solid rgba(0,0,0,0.5);/*cambiamos de tamaño los bordes*/
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);/*le ponemos sombra a los botones*/ 
+    color: white;
+    background-color: rgb(4, 177, 4);
+}
+
+button:hover{
+    /*utilizamos hover para que cuando el raton pase por el boton, se haga mas oscuro*/
+    background-color: rgb(7, 147, 7);
+}
+
+
+#video{
+    background-color: rgb(79, 124, 154);
+    display: flex;
+    padding: 45px ;
+
+
+   
+}
+
+#video h1{
+font-family:'Roboto', sans-serif ;
+align-items: center center;
+display: flex;
+justify-content: center center;
+
+padding: 60px;
+font-size: 60px;
+text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+color: rgb(179, 236, 233);
+}
+
+#video2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(79, 124, 154);
+}
+
+
+
+ @media (max-width: 768px) {
+    header .container {
+      flex-direction: column; /* Apila los elementos verticalmente */
+      align-items: center; /* Centra los elementos */
+    }
+  
+    header nav {
+      flex-direction: column; /* Apila los enlaces de navegación verticalmente */
+      padding-bottom: 0px; /* Añade un poco de espacio debajo de la navegación */
+    }
+  
+    header nav a {
+      padding: 10px; /* Aumenta el padding para que los enlaces sean más fáciles de tocar */
+      font-size: 1.2em; /* Hace la letra más grande para facilitar la lectura */
+    }
+  
+    #hero {
+      height: auto; /* Permite que la sección 'hero' crezca según su contenido */
+      padding: 50px 20px; /* Reduce el padding en pantallas pequeñas */
+      padding-top: 300px;
+
+    }
+  
+    #hero h1 {
+      font-size: 3em; /* Reduce el tamaño de la letra del título */
+      text-align: center;
+      justify-content: center;
+    }
+  
+    #imagenes {
+      padding: 50px 20px; /* Reduce el padding */
+    }
+  
+    #imagenes .container {
+      padding: 20px; /* Reduce el padding del contenedor */
+    }
+  
+    #imagenes h1 {
+      font-size: 3em; /* Reduce el tamaño del título */
+    }
+  
+    #imagenes .imagenchi {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      padding: 20px; /* Reduce el padding */
+      margin: 10px 0; /* Reduce los márgenes */
+    }
+  
+    #video {
+      padding: 50px 20px; /* Reduce el padding */
+    }
+  
+    #video h1 {
+      font-size: 2em; /* Reduce el tamaño del título */
+      padding: 20px; /* Reduce el padding */
+    }
+
+    #video2{
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+}
+/* Footer */
+#footer {
+    background-color: rgb(101, 156, 207);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    clear: both; /* Evita que flote encima de otros elementos */
+}
+
+#footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
